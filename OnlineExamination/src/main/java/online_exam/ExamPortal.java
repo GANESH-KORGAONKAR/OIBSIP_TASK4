@@ -1,42 +1,51 @@
 package online_exam;
+
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
+// User1 class to represent a user in the system
 class User1 {
     private String username;
     private String password;
     private String profile;
 
+    // Constructor to initialize user details
     public User1(String username, String password, String profile) {
         this.username = username;
         this.password = password;
         this.profile = profile;
     }
 
+    // Getter for username
     public String getUsername() {
         return username;
     }
 
+    // Getter for profile
     public String getProfile() {
         return profile;
     }
 
+    // Method to update user profile
     public void updateProfile(String newProfile) {
         profile = newProfile;
         System.out.println("Profile updated successfully!");
     }
 
+    // Method to authenticate user password
     public boolean authenticate(String enteredPassword) {
         return password.equals(enteredPassword);
     }
 }
 
+// Exam class to represent an exam in the system
 class Exam {
     private String[] questions;
     private String[] options;
     private int[] correctAnswers;
     private int examDuration; // Duration of the exam in seconds
 
+    // Constructor to initialize exam details
     public Exam() {
         questions = new String[]{
             "1. Who invented Java Programming?",
@@ -65,9 +74,10 @@ class Exam {
         };
 
         correctAnswers = new int[]{2, 4, 4, 2, 3, 4, 4, 3, 2, 2};
-        examDuration = 60; //  minutes (in seconds)
+        examDuration = 60; // Duration of the exam in seconds
     }
 
+    // Method to start the exam for a user
     public void startExam(User1 user) {
         Scanner scanner = new Scanner(System.in);
         int score = 0;
@@ -76,6 +86,7 @@ class Exam {
 
         System.out.println("Welcome, " + user.getUsername() + "! You have " + examDuration + " seconds to complete the exam.");
 
+        // Loop through all the questions
         for (int i = 0; i < questions.length; i++) {
             System.out.println("\nQuestion " + (i + 1) + ": " + questions[i]);
             System.out.println(options[i]);
@@ -83,6 +94,7 @@ class Exam {
             System.out.print("Your choice (1-4): ");
             int choice = scanner.nextInt();
 
+            // Check if the chosen answer is correct
             if (choice == correctAnswers[i]) {
                 System.out.println("Correct!");
                 score++;
@@ -107,20 +119,23 @@ class Exam {
         }
     }
 
+    // Method to handle manual submission of the exam
     private void submitManually(int score) {
         System.out.println("\nExam submitted manually. Your score: " + score + "/" + questions.length);
     }
 
+    // Method to handle automatic submission of the exam when time is up
     private void submitAutomatically(int score) {
         System.out.println("\nTime's up! Automatically submitting the exam. Your score: " + score + "/" + questions.length);
     }
 }
     
-public class ExamPortal{
+public class ExamPortal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         User1 currentUser = null;
 
+        // Main menu loop
         while (true) {
             System.out.println("\nOnline Examination System");
             System.out.println("1. Login");
@@ -140,6 +155,7 @@ public class ExamPortal{
                 if (currentUser != null) {
                     System.out.println("Login successful. Welcome, " + currentUser.getUsername());
 
+                    // User menu loop
                     while (true) {
                         System.out.println("\nUser Profile: " + currentUser.getProfile());
                         System.out.println("Exam Menu:");
