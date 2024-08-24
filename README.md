@@ -51,9 +51,13 @@ If login is successful, you will see a welcome message and the user menu.
 
 ## Sample Output
 ### Output Screenshot
+  
+### 1]
+<img src="https://github.com/user-attachments/assets/4ce99be8-fa6b-4b7c-95d2-3926f7af67ff" alt="Online Examination System Output 1" width="500" height="300" >
 
-<img src="https://github.com/user-attachments/assets/4ce99be8-fa6b-4b7c-95d2-3926f7af67ff" alt="Number Guessing Game Output 1" width="500" height="300" align="center">
-<img src="https://github.com/user-attachments/assets/7abac528-042e-4a0c-9d98-42e3c6e62a27" alt="Number Guessing Game Output 2" width="500" height="300" align="center">
+### 2]
+<img src="https://github.com/user-attachments/assets/7abac528-042e-4a0c-9d98-42e3c6e62a27" alt="Online Examination System Output 2" width="500" height="300" >
+
 
 ## Acknowledgements
 The questions and options used in this project are inspired by common Java quiz questions.Additionally, I received valuable assistance in adding comments and refining the code from ChatGPT.
