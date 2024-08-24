@@ -58,8 +58,7 @@ If login is successful, you will see a welcome message and the user menu.
 ### 2]
 <img src="https://github.com/user-attachments/assets/7abac528-042e-4a0c-9d98-42e3c6e62a27" alt="Online Examination System Output 2" width="500" height="300" >
 
-
 ## Acknowledgements
-The questions and options used in this project are inspired by common Java quiz questions.Additionally, I received valuable assistance in adding comments and refining the code from ChatGPT.
+This project was developed as part of the Oasis Infobyte Internship. Special thanks to the team at Oasis Infobyte for providing this opportunity. The questions and options used in this project are inspired by common Java quiz questions. Additionally, I received valuable assistance in adding comments and refining the code from ChatGPT.
 
 ## Enjoy using the Online Examination System!
