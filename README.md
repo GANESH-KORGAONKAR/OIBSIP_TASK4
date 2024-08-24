@@ -10,6 +10,7 @@ Welcome to the Online Examination System! This project is a simple console-based
 - [Requirements](#requirements)
 - [Setup and Installation](#setup-and-installation)
 - [Usage](#usage)
+- [Sample Output](#sample-output)
 - [Acknowledgements](#acknowledgements)
 
 ## Features
@@ -47,6 +48,12 @@ If login is successful, you will see a welcome message and the user menu.
 - The exam consists of 10 multiple-choice questions.
 - Each correct answer scores 1 point.
 - You have a limited time to complete the exam.
+
+## Sample Output
+### Output Screenshot
+
+<img src="https://github.com/user-attachments/assets/4ce99be8-fa6b-4b7c-95d2-3926f7af67ff" alt="Number Guessing Game Output 1" width="500" height="300" align="center">
+<img src="https://github.com/user-attachments/assets/7abac528-042e-4a0c-9d98-42e3c6e62a27" alt="Number Guessing Game Output 2" width="500" height="300" align="center">
 
 ## Acknowledgements
 The questions and options used in this project are inspired by common Java quiz questions.Additionally, I received valuable assistance in adding comments and refining the code from ChatGPT.
